@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataCollectionModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DataCollectionEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="CompanyInfoes" EntityType="DataCollectionModel.CompanyInfo" />
+    <EntitySet Name="PersonInfoes" EntityType="DataCollectionModel.PersonInfo" />
+    <EntitySet Name="sysdiagrams" EntityType="DataCollectionModel.sysdiagram" />
+    <EntitySet Name="UserInfoes" EntityType="DataCollectionModel.UserInfo" />
+    <EntitySet Name="ViewPersonCompanyInfoes" EntityType="DataCollectionModel.ViewPersonCompanyInfo" />
+    <AssociationSet Name="FK_PersonInfo_CompanyInfo" Association="DataCollectionModel.FK_PersonInfo_CompanyInfo">
+      <End Role="CompanyInfo" EntitySet="CompanyInfoes" />
+      <End Role="PersonInfo" EntitySet="PersonInfoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CompanyInfo">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Type="Int32" Name="CID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fax" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Tags" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreateDate" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="String" Name="Year" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Employee" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PersonInfoes" Relationship="DataCollectionModel.FK_PersonInfo_CompanyInfo" FromRole="CompanyInfo" ToRole="PersonInfo" />
+  </EntityType>
+  <EntityType Name="PersonInfo">
+    <Key>
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Type="Int32" Name="PID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Designation" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Department" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CompanyID" />
+    <Property Type="String" Name="City" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailCompany" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailPersonal" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhoneOffice" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhonePersonal" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Linkedin" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Tags" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreateDate" Precision="3" />
+    <Property Type="Int32" Name="UserID" />
+    <NavigationProperty Name="CompanyInfo" Relationship="DataCollectionModel.FK_PersonInfo_CompanyInfo" FromRole="PersonInfo" ToRole="CompanyInfo" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Type="Int32" Name="UID" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="DateTime" Name="CreateDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="ViewPersonCompanyInfo">
+    <Key>
+      <PropertyRef Name="CID" />
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CID" Nullable="false" />
+    <Property Type="String" Name="City" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fax" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Tags" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreateDate" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="Int32" Name="PID" Nullable="false" />
+    <Property Type="String" Name="Expr1" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Designation" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Department" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Expr2" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CompanyID" />
+    <Property Type="String" Name="Expr3" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Expr4" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailCompany" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailPersonal" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhoneOffice" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhonePersonal" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Linkedin" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Expr5" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Expr6" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Expr7" Precision="3" />
+    <Property Type="Int32" Name="Expr8" />
+  </EntityType>
+  <Association Name="FK_PersonInfo_CompanyInfo">
+    <End Type="DataCollectionModel.CompanyInfo" Role="CompanyInfo" Multiplicity="0..1" />
+    <End Type="DataCollectionModel.PersonInfo" Role="PersonInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyInfo">
+        <PropertyRef Name="CID" />
+      </Principal>
+      <Dependent Role="PersonInfo">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

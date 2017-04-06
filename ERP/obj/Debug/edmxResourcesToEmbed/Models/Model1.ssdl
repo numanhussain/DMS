@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataCollectionModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DataCollectionModelStoreContainer">
+    <EntitySet Name="CompanyInfo" EntityType="DataCollectionModel.Store.CompanyInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PersonInfo" EntityType="DataCollectionModel.Store.PersonInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="DataCollectionModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TM_DailySheet" EntityType="DataCollectionModel.Store.TM_DailySheet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TM_Department" EntityType="DataCollectionModel.Store.TM_Department" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TM_Projects" EntityType="DataCollectionModel.Store.TM_Projects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="DataCollectionModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ViewPersonCompanyInfo" EntityType="DataCollectionModel.Store.ViewPersonCompanyInfo" store:Type="Views" store:Schema="dbo" store:Name="ViewPersonCompanyInfo">
+      <DefiningQuery>SELECT 
+      [ViewPersonCompanyInfo].[Name] AS [Name], 
+      [ViewPersonCompanyInfo].[Address] AS [Address], 
+      [ViewPersonCompanyInfo].[CID] AS [CID], 
+      [ViewPersonCompanyInfo].[City] AS [City], 
+      [ViewPersonCompanyInfo].[Country] AS [Country], 
+      [ViewPersonCompanyInfo].[Website] AS [Website], 
+      [ViewPersonCompanyInfo].[Phone] AS [Phone], 
+      [ViewPersonCompanyInfo].[Fax] AS [Fax], 
+      [ViewPersonCompanyInfo].[Tags] AS [Tags], 
+      [ViewPersonCompanyInfo].[Remarks] AS [Remarks], 
+      [ViewPersonCompanyInfo].[CreateDate] AS [CreateDate], 
+      [ViewPersonCompanyInfo].[UserID] AS [UserID], 
+      [ViewPersonCompanyInfo].[PID] AS [PID], 
+      [ViewPersonCompanyInfo].[Expr1] AS [Expr1], 
+      [ViewPersonCompanyInfo].[Designation] AS [Designation], 
+      [ViewPersonCompanyInfo].[Department] AS [Department], 
+      [ViewPersonCompanyInfo].[Expr2] AS [Expr2], 
+      [ViewPersonCompanyInfo].[CompanyID] AS [CompanyID], 
+      [ViewPersonCompanyInfo].[Expr3] AS [Expr3], 
+      [ViewPersonCompanyInfo].[Expr4] AS [Expr4], 
+      [ViewPersonCompanyInfo].[EmailCompany] AS [EmailCompany], 
+      [ViewPersonCompanyInfo].[EmailPersonal] AS [EmailPersonal], 
+      [ViewPersonCompanyInfo].[PhoneOffice] AS [PhoneOffice], 
+      [ViewPersonCompanyInfo].[PhonePersonal] AS [PhonePersonal], 
+      [ViewPersonCompanyInfo].[Linkedin] AS [Linkedin], 
+      [ViewPersonCompanyInfo].[Expr5] AS [Expr5], 
+      [ViewPersonCompanyInfo].[Expr6] AS [Expr6], 
+      [ViewPersonCompanyInfo].[Expr7] AS [Expr7], 
+      [ViewPersonCompanyInfo].[Expr8] AS [Expr8]
+      FROM [dbo].[ViewPersonCompanyInfo] AS [ViewPersonCompanyInfo]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_PersonInfo_CompanyInfo" Association="DataCollectionModel.Store.FK_PersonInfo_CompanyInfo">
+      <End Role="CompanyInfo" EntitySet="CompanyInfo" />
+      <End Role="PersonInfo" EntitySet="PersonInfo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CompanyInfo">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Name="CID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="City" Type="nvarchar" MaxLength="500" />
+    <Property Name="Country" Type="nvarchar" MaxLength="500" />
+    <Property Name="Website" Type="nvarchar" MaxLength="500" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="500" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="500" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="500" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="nvarchar" MaxLength="500" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="Year" Type="nvarchar" MaxLength="50" />
+    <Property Name="Employee" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="PersonInfo">
+    <Key>
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Name="PID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="500" />
+    <Property Name="Department" Type="nvarchar" MaxLength="500" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="City" Type="nvarchar" MaxLength="500" />
+    <Property Name="Country" Type="nvarchar" MaxLength="500" />
+    <Property Name="EmailCompany" Type="nvarchar" MaxLength="500" />
+    <Property Name="EmailPersonal" Type="nvarchar" MaxLength="500" />
+    <Property Name="PhoneOffice" Type="nvarchar" MaxLength="500" />
+    <Property Name="PhonePersonal" Type="nvarchar" MaxLength="500" />
+    <Property Name="Linkedin" Type="nvarchar" MaxLength="500" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="500" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UserID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TM_DailySheet">
+    <Key>
+      <PropertyRef Name="TDID" />
+    </Key>
+    <Property Name="TDID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="int" />
+    <Property Name="DepartmentID" Type="int" />
+    <Property Name="TaskName" Type="nvarchar" MaxLength="100" />
+    <Property Name="AssignTime" Type="time" />
+    <Property Name="StartTime" Type="time" />
+    <Property Name="ActualTime" Type="time" />
+    <Property Name="EndTime" Type="time" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="Remarks" Type="nvarchar" />
+    <Property Name="TaskDescription" Type="nvarchar" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Repeat" Type="bit" />
+    <Property Name="Proirity" Type="nvarchar" MaxLength="50" />
+    <Property Name="NumOfDays" Type="int" />
+  </EntityType>
+  <EntityType Name="TM_Department">
+    <Key>
+      <PropertyRef Name="TDepID" />
+    </Key>
+    <Property Name="TDepID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DepName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TM_Projects">
+    <Key>
+      <PropertyRef Name="TProID" />
+    </Key>
+    <Property Name="TProID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProName" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Password" Type="nvarchar" MaxLength="500" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'DataCollection.dbo.ViewPersonCompanyInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ViewPersonCompanyInfo">
+    <Key>
+      <PropertyRef Name="CID" />
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="CID" Type="int" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="500" />
+    <Property Name="Country" Type="nvarchar" MaxLength="500" />
+    <Property Name="Website" Type="nvarchar" MaxLength="500" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="500" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="500" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="500" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="nvarchar" MaxLength="500" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="PID" Type="int" Nullable="false" />
+    <Property Name="Expr1" Type="nvarchar" MaxLength="500" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="500" />
+    <Property Name="Department" Type="nvarchar" MaxLength="500" />
+    <Property Name="Expr2" Type="nvarchar" MaxLength="500" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="Expr3" Type="nvarchar" MaxLength="500" />
+    <Property Name="Expr4" Type="nvarchar" MaxLength="500" />
+    <Property Name="EmailCompany" Type="nvarchar" MaxLength="500" />
+    <Property Name="EmailPersonal" Type="nvarchar" MaxLength="500" />
+    <Property Name="PhoneOffice" Type="nvarchar" MaxLength="500" />
+    <Property Name="PhonePersonal" Type="nvarchar" MaxLength="500" />
+    <Property Name="Linkedin" Type="nvarchar" MaxLength="500" />
+    <Property Name="Expr5" Type="nvarchar" MaxLength="500" />
+    <Property Name="Expr6" Type="nvarchar" MaxLength="500" />
+    <Property Name="Expr7" Type="datetime" />
+    <Property Name="Expr8" Type="int" />
+  </EntityType>
+  <Association Name="FK_PersonInfo_CompanyInfo">
+    <End Role="CompanyInfo" Type="DataCollectionModel.Store.CompanyInfo" Multiplicity="0..1" />
+    <End Role="PersonInfo" Type="DataCollectionModel.Store.PersonInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyInfo">
+        <PropertyRef Name="CID" />
+      </Principal>
+      <Dependent Role="PersonInfo">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

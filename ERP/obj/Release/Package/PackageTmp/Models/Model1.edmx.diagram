@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ab9cc08497d4d378f6a4ad97dfbc1ec" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="DataCollectionModel.CompanyInfo" Width="1.5" PointX="11.870520623340514" PointY="1.1420448278738395" />
+        <EntityTypeShape EntityType="DataCollectionModel.PersonInfo" Width="1.5" PointX="3.9957000929842241" PointY="17.949568026675642" />
+        <EntityTypeShape EntityType="DataCollectionModel.sysdiagram" Width="1.5" PointX="10.137888421368734" PointY="13.772140732860258" />
+        <EntityTypeShape EntityType="DataCollectionModel.UserInfo" Width="1.5" PointX="9.1377359186940517" PointY="3.9500740039861175" />
+        <EntityTypeShape EntityType="DataCollectionModel.ViewPersonCompanyInfo" Width="1.5" PointX="5.120388571694674" PointY="25.921940919906806" />
+        <AssociationConnector Association="DataCollectionModel.FK_PersonInfo_CompanyInfo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

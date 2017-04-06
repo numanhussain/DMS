@@ -1,0 +1,90 @@
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\ERP.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\ERP.pdb
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\EntityFramework.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\Microsoft.Web.Infrastructure.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Helpers.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Mvc.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Razor.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Webpages.Deployment.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Webpages.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Webpages.Razor.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\EntityFramework.xml
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Razor.xml
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Webpages.xml
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Webpages.Deployment.xml
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Webpages.Razor.xml
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Helpers.xml
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\bin\System.Web.Mvc.xml
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\obj\Debug\ERP.dll
+c:\users\muhammad adnan\documents\visual studio 2012\Projects\ERP\ERP\obj\Debug\ERP.pdb
+F:\Projects\ERP\ERP\bin\ERP.dll
+F:\Projects\ERP\ERP\bin\ERP.pdb
+F:\Projects\ERP\ERP\bin\EntityFramework.dll
+F:\Projects\ERP\ERP\bin\Microsoft.Web.Infrastructure.dll
+F:\Projects\ERP\ERP\bin\PagedList.dll
+F:\Projects\ERP\ERP\bin\PagedList.Mvc.dll
+F:\Projects\ERP\ERP\bin\System.Web.Helpers.dll
+F:\Projects\ERP\ERP\bin\System.Web.Mvc.dll
+F:\Projects\ERP\ERP\bin\System.Web.Razor.dll
+F:\Projects\ERP\ERP\bin\System.Web.Webpages.Deployment.dll
+F:\Projects\ERP\ERP\bin\System.Web.Webpages.dll
+F:\Projects\ERP\ERP\bin\System.Web.Webpages.Razor.dll
+F:\Projects\ERP\ERP\bin\EntityFramework.xml
+F:\Projects\ERP\ERP\bin\PagedList.xml
+F:\Projects\ERP\ERP\bin\PagedList.Mvc.xml
+F:\Projects\ERP\ERP\bin\System.Web.Razor.xml
+F:\Projects\ERP\ERP\bin\System.Web.Webpages.xml
+F:\Projects\ERP\ERP\bin\System.Web.Webpages.Deployment.xml
+F:\Projects\ERP\ERP\bin\System.Web.Webpages.Razor.xml
+F:\Projects\ERP\ERP\bin\System.Web.Helpers.xml
+F:\Projects\ERP\ERP\bin\System.Web.Mvc.xml
+F:\Projects\ERP\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+F:\Projects\ERP\ERP\obj\Debug\ERP.dll
+F:\Projects\ERP\ERP\obj\Debug\ERP.pdb
+F:\Projects\ERP\ERP(DMS)\ERP\bin\ERP.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\ERP.pdb
+F:\Projects\ERP\ERP(DMS)\ERP\bin\EntityFramework.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\Microsoft.Web.Infrastructure.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\PagedList.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\PagedList.Mvc.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Helpers.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Mvc.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Razor.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Deployment.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Razor.dll
+F:\Projects\ERP\ERP(DMS)\ERP\bin\EntityFramework.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\PagedList.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\PagedList.Mvc.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Razor.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Deployment.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Razor.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Helpers.xml
+F:\Projects\ERP\ERP(DMS)\ERP\bin\System.Web.Mvc.xml
+F:\Projects\ERP\ERP(DMS)\ERP\obj\Debug\ERP.dll
+F:\Projects\ERP\ERP(DMS)\ERP\obj\Debug\ERP.pdb
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\obj\Debug\ERP.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\obj\Debug\ERP.pdb
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\ERP.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\ERP.pdb
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\EntityFramework.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\Microsoft.Web.Infrastructure.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\PagedList.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\PagedList.Mvc.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Helpers.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Mvc.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Razor.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Deployment.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Razor.dll
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\EntityFramework.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\PagedList.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\PagedList.Mvc.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Razor.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Deployment.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Webpages.Razor.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Helpers.xml
+E:\Work\Projects\Task Management\Task Management\ERP2\ERP\ERP(DMS)\ERP\bin\System.Web.Mvc.xml

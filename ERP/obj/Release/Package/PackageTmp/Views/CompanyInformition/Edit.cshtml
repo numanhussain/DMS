@@ -1,0 +1,121 @@
+﻿@model ERP.Models.CompanyInfo
+
+@{
+    ViewBag.Title = "Edit";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="well bs-component">
+        <form class="form-horizontal" action="~/Views/CompanyInformition/Create" enctype="multipart/form-data" method="post">          
+            <fieldset>
+    <div class="form-horizontal">
+        <h3>Edit Company Informition</h3>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.CID)
+
+         <section class="col-md-12">
+            <section class="col-md-6">
+                 <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Name</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+        <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Address</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Address, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Address)
+            </div>
+        </div>
+        <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Phone</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Phone)
+            </div>
+        </div>
+        <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Website</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Website, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Website)
+            </div>
+        </div>
+        <div class="form-group">
+            <label style="font-size:15px" class="control-label col-md-2">Year</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Year, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Year)
+            </div>
+        </div>
+        <div class="form-group">
+            <label style="font-size:15px" class="control-label col-md-2">Employees</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Employee, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Employee)
+            </div>
+        </div> 
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default btn-success" />
+                @Html.ActionLink("Back to List", "Index",null,new { @class = "btn btn-primary " })
+            </div>
+        </div>                                     
+            </section>
+            <section class="col-md-6">
+          <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Email</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+        </div> 
+         <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Fax</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Fax, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Fax)
+            </div>
+        </div>                
+        <div class="form-group">
+            <label style="font-size:15px" class="control-label col-md-2">City</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.City, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+
+        <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Country</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Country, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Country)
+            </div>
+        </div>
+        <div class="form-group">
+            <label style="font-size:15px" class="control-label col-md-2">Tags</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Tags, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Tags)
+            </div>
+        </div>
+
+        <div class="form-group">
+             <label style="font-size:15px" class="control-label col-md-2">Remarks</label>  
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Remarks, new { @class = "form-control"})
+                @Html.ValidationMessageFor(model => model.Remarks)
+            </div>
+        </div>
+            </section>
+        </section>
+      
+    </div>
+                </fieldset>
+            </form>
+        </div>
+}

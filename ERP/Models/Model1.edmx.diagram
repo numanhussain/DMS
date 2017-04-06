@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ab9cc08497d4d378f6a4ad97dfbc1ec" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="DataCollectionModel.CompanyInfo" Width="1.5" PointX="1.8457166933667457" PointY="17.5383849374663" />
+        <EntityTypeShape EntityType="DataCollectionModel.PersonInfo" Width="1.5" PointX="4.7695413328565381" PointY="11.87925214128534" />
+        <EntityTypeShape EntityType="DataCollectionModel.sysdiagram" Width="1.5" PointX="10.002995056101584" PointY="4.4758994153122877" />
+        <EntityTypeShape EntityType="DataCollectionModel.TM_DailySheet" Width="1.5" PointX="10.435502221079311" PointY="15.252419329831572" />
+        <EntityTypeShape EntityType="DataCollectionModel.TM_Department" Width="1.5" PointX="5.5718575406688533" PointY="19.068693974553" />
+        <EntityTypeShape EntityType="DataCollectionModel.TM_Projects" Width="1.5" PointX="2.2467121883512995" PointY="13.146161040824913" />
+        <EntityTypeShape EntityType="DataCollectionModel.User" Width="1.5" PointX="8.6373272578405818" PointY="21.799418951291319" />
+        <EntityTypeShape EntityType="DataCollectionModel.ViewPersonCompanyInfo" Width="1.5" PointX="1.0426684213069586" PointY="20.918328697289493" />
+        <AssociationConnector Association="DataCollectionModel.FK_PersonInfo_CompanyInfo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
